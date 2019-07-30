@@ -36,7 +36,7 @@ Then do the same thing with this text:
 
 Here is how you can make a tests like this yourself.
 
-#DIY
+# DIY
 
 Create a new file and add text as a string.
 
