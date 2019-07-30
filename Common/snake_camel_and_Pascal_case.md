@@ -73,3 +73,8 @@ camelCaseText = text_to_convert.replace(remove_spaces_and_other_special_characte
 console.log(camelCaseText);
 ```
 
+2019.07.30
+
+Daniel Georgiec
+CEO Iris Technologies
+https://iristech.co
