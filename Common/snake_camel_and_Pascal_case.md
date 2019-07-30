@@ -29,15 +29,32 @@ Here is how you can do the code readability test by yourself.
 
 See how fast you can read this text:
 -----
+```
+WhySnake_caseIsBetterIStartedMyProgrammingCareerByWritingCamelCaseAndPascalCaseButOverTimeChangedToSnake_caseBecauseWeRealizedTheItsMuchFasterAndEasierToReadAndInProgrammingFastAndEasyIsImportantWeAlsoDidaTestsWithSomeNewPeopleToSeeHowFastTheyStartToUnderstandTheCodeAndBeProductiveAndTheResultsAlsoToldUsTheSameThingSnake_caseIsMuchBetterFasterAndEasierToReadSoWeMakeaConventionInOurCompanyToWriteAllFunctionAndVariableNamesInAllProgrammingLanguagesToBeSnake_caseThisIsAlsoTrueForAndroidAndJavascriptWhereTheDefaultCodeConventionIsCamelCaseWeWriteAllFunctionAndVariableNamesInAllLanguagesSnake_caseOverTimeHoweverWeAlsoRealizedThatIfEverythingIsSnake_caseClassNamesAreHarderToDistinguishThisIsHowWeDecidedThatItsaGoodIdeaToChangeOurConventionaBitTheFirstIdeaWasToJustWriteTheClassNamesLikeThisSome_object_nameWithCapitalLetterAtTheBeginningButAfterDoingSomeTestsAgainWeFoundThatItsStillHardToDistinguishBetweenClassNamesAndFunctionAndVariableNamesThisIsHowOurSecondCodeConventionRuleWasBornAndThisIsAgainInAllLanguagesWeWriteClassNamesInAllLanguagesPascalCaseHereIsHowYouCanDoTheCodeReadabilityTestByYourself
+```
 
 Then do the same thing with this text:
 -----
 
 Here is how you can make a tests like this yourself.
 
+#DIY
+
 Create a new file and add text as a string.
 
 ![text_to_convert](images/text_to_convert.png)
+
+The do the following Regex to get it like camelCase
+
+```javascript
+var capitalize_regex = /(\b[a-z](?!\s))/g;
+camelCaseText = text_to_convert.replace(capitalize_regex, function(x){return x.toUpperCase();});
+var remove_spaces_and_other_special_characters_regex = /[# ,\r\n.\'\`\"]/gi;
+camelCaseText = camelCaseText.replace(remove_spaces_and_other_special_characters_regex, '');
+console.log(camelCaseText);
+```
+
+And the following Regex to get it like snake_case
 
 
 
