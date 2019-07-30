@@ -54,5 +54,9 @@ console.log(camelCaseText);
 
 And the following Regex to get it like snake_case
 
-
+```javascript
+var remove_spaces_and_other_special_characters_regex = /[_# ,\r\n.\'\`\"]+/gi;
+camelCaseText = text_to_convert.replace(remove_spaces_and_other_special_characters_regex, '_');
+console.log(camelCaseText);
+```
 
