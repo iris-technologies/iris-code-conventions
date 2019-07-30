@@ -37,6 +37,7 @@ Here is how you can make a tests like this yourself.
 
 Create a new file and add text as a string.
 
+![text_to_convert](images/text_to_convert.png)
 
 
 
