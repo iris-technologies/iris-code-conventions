@@ -75,6 +75,10 @@ console.log(camelCaseText);
 
 2019.07.30
 
-Daniel Georgiec
+
+
+Daniel Georgiev
+
 CEO Iris Technologies
+
 https://iristech.co
