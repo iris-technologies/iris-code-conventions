@@ -33,4 +33,10 @@ See how fast you can read this text:
 Then do the same thing with this text:
 -----
 
+Here is how you can make a tests like this yourself.
+
+Create a new file and add text as a string.
+
+
+
 
