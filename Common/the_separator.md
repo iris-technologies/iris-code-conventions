@@ -89,3 +89,12 @@ something elsesomething else
 
 -----
 and something more about the topic
+```
+
+Daniel Georgiev
+
+CEO Iris Technologies
+
+2019.07.31
+
+https://iristech.co
