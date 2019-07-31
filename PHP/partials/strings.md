@@ -91,7 +91,7 @@ function current_schedules_container_card_begin()
 
 Use double quotes `"`.
 
-Always use backticks `` ` `` for 
+Always use backticks `` ` `` for column, table and database names
 
 ```php
 DO THIS:
