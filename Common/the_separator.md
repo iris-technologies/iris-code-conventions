@@ -35,6 +35,8 @@ To separate between different things you want to say.
 
 Use longer separator with 20 characters if you start to talk about something entirely different.
 
+Use also whitespaces and new lines.
+
 ```php
 --------------------
 ```
@@ -43,6 +45,8 @@ Example:
 
 ```
 --------------------
+
+
 I'm going to talk about some topic
 -----
 something about the topic
@@ -62,7 +66,10 @@ something elsesomething else
 
 -----
 and something more about the topic
+
 --------------------
+
+
 New topic
 -----
 something about the topic
