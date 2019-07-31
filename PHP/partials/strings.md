@@ -9,6 +9,7 @@ Examples:
 ```php
 DO THIS:
 
+////////////////////////////////////////////////////////////
 require_once(DOCUMENT_ROOT.'header.php');
 ...
 display_sidebar('schedules');
@@ -19,6 +20,8 @@ if(isset($_SESSION['page_id']))
 }
 
 NOT THIS:
+
+////////////////////////////////////////////////////////////
 require_once(DOCUMENT_ROOT."header.php");
 ...
 display_sidebar("schedules");
@@ -38,13 +41,16 @@ Just place the variable in the string with double quotes without special syntax 
 
 ```php
 DO THIS:
+////////////////////////////////////////////////////////////
 $subject = "Hi $name";
 
 NOT THIS:
+////////////////////////////////////////////////////////////
 $subject = "Hi {$name}";
 $subject = "Hi ".$name;
 $subject = 'Hi {$name}';
 $subject = 'Hi '.$name;
+
 ```
 
 ## Multi-line strings
@@ -57,7 +63,6 @@ All HTML in the project should use double quotes `"`. This is how most websites,
 
 ```php
 DO THIS:
-
 ///////////////////////////////////////////////////////////
 function current_schedules_container_card_begin()
 {
@@ -72,7 +77,6 @@ function current_schedules_container_card_begin()
 }
 
 NOT THIS:
-
 ///////////////////////////////////////////////////////////
 function current_schedules_container_card_begin()
 {
@@ -87,7 +91,6 @@ function current_schedules_container_card_begin()
 }
 
 NOT THIS:
-
 ///////////////////////////////////////////////////////////
 function current_schedules_container_card_begin()
 {
@@ -114,7 +117,7 @@ Always use backticks `` ` `` for column, table and database names
 
 ```php
 DO THIS:
-
+////////////////////////////////////////////////////////////
 $query = $GLOBALS['database_connection']->prepare
 (
 "
@@ -150,7 +153,7 @@ $query->bind_param
 $query->execute();
 
 NOT THIS:
-
+////////////////////////////////////////////////////////////
 $sql =
 "
     INSERT INTO `iris_messenger_schedules`
@@ -185,7 +188,7 @@ Don't use Raw SQL.
 
 ```php
 DO THIS:
-
+////////////////////////////////////////////////////////////
 $sql =
 "
     INSERT INTO `app_licenses` 
@@ -206,7 +209,7 @@ $sql =
 $result = execute_query($sql);
 
 NOT THIS:
-
+////////////////////////////////////////////////////////////
 $sql =
 '
     INSERT INTO `app_licenses` 
@@ -227,7 +230,7 @@ $sql =
 $result = execute_query($sql);
 
 NOT THIS:
-
+////////////////////////////////////////////////////////////
 $sql =
 "
     INSERT INTO `app_licenses` 
@@ -248,7 +251,7 @@ $sql =
 $result = execute_query($sql);
 
 NOT THIS:
-
+////////////////////////////////////////////////////////////
 $sql =
 '
     INSERT INTO `app_licenses` 
