@@ -89,7 +89,7 @@ function current_schedules_container_card_begin()
 
 ### Prepared queries
 
-Always use prepared queries instead of raw SQL like and ALWAYS, ALWAYS, escape all variables.
+Always use prepared queries instead of raw SQL and ALWAYS, ALWAYS, escape all variables.
 
 Use double quotes `"` for the strings.
 
@@ -160,7 +160,7 @@ $result = execute_query($sql);
 
 ### If you dare to write Raw SQL
 
-Always use prepared queries instead of raw SQL like and ALWAYS, ALWAYS, escape all variables.
+Always use prepared queries instead of raw SQL and ALWAYS, ALWAYS, escape all variables.
 
 Use double quotes `"` and place all the variables directly into the string if you use them.
 
