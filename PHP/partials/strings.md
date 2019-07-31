@@ -30,6 +30,23 @@ if(isset($_SESSION["page_id"]))
 
 ```
 
+## Strings with varialbes
+
+Use double quotes `"` for the strings with variables.
+
+Just place the variable in the string with double quotes without special syntax or concatenation.
+
+```php
+DO THIS:
+$subject = "Hi $name";
+
+NOT THIS:
+$subject = "Hi {$name}";
+$subject = "Hi ".$name;
+$subject = 'Hi {$name}';
+$subject = 'Hi '.$name;
+```
+
 ## Multi-line strings
 
 ### Echo of HTML
