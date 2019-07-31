@@ -89,20 +89,24 @@ function current_schedules_container_card_begin()
 
 #### Always use prepared queries instead of raw SQL like in the above example whenever possible and ALWAYS, ALWAYS, escape all variables.
 
+Use double quotes `"`.
+
+Always use backticks `` ` `` for 
+
 ```php
 DO THIS:
 
 $query = $GLOBALS['database_connection']->prepare
 (
 "
-    INSERT INTO iris_messenger_schedules 
+    INSERT INTO `iris_messenger_schedules`
     (
-        campaign_name,
-        user_segment,
-        status,
-        start_date,
-        end_date,
-        page_id
+        `campaign_name`,
+        `user_segment`,
+        `status`,
+        `start_date`,
+        `end_date`,
+        `page_id`
     )
     VALUES 
     (
@@ -130,14 +134,14 @@ NOT THIS:
 
 $sql =
 "
-    INSERT INTO iris_messenger_schedules 
+    INSERT INTO `iris_messenger_schedules`
     (
-        campaign_name,
-        user_segment,
-        status,
-        start_date,
-        end_date,
-        page_id
+        `campaign_name`,
+        `user_segment`,
+        `status`,
+        `start_date`,
+        `end_date`,
+        `page_id`
     )
     VALUES 
     (
@@ -154,7 +158,7 @@ $result = execute_query($sql);
 
 #### If you dare to write Raw SQL
 
-Use double quotes `"` and place all the variables directly into the string if you use them
+Use double quotes `"` and place all the variables directly into the string if you use them.
 
 ```php
 DO THIS:
