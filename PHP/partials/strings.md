@@ -30,7 +30,7 @@ if(isset($_SESSION["page_id"]))
 
 ```
 
-## Strings with varialbes
+## Strings with variables
 
 Use double quotes `"` for the strings with variables.
 
