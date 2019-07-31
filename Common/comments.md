@@ -52,6 +52,33 @@ process_user_response($what_user_send_to_us_response);
 3. Don't use comments to explain what a function means. Use better function name.
 4. Don't use comments in the code. Make the code self-documenting. Write better variable, function and file names.
 
+## Combining comments with the separator
+
+When you want to combine comments with the separator always write the comment above the separator
+
+```php
+
+DO THIS:
+
+//My comment here
+////////////////////////////////////////////////////////////
+function some_really_complicated_stuff()
+{
+}
+
+NOT THIS:
+
+////////////////////////////////////////////////////////////
+//My comment here
+function some_really_complicated_stuff()
+{
+}
+
+
+```
+
+## Notice about varialbe and function names
+
 Notice how also all variable names in all scopes have different names. This is important.
 
 Every variable and function name in the entire project should be unique. 
