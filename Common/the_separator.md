@@ -22,3 +22,63 @@ It looks like this:
 
 1. Inside of functions, ifs, for, while etc. If you feel the need to use separator you need to create new function to handle the long code
 2. Inside class functions in languages like PHP where the method declaration and definition are in one place. There are special conventions for classes in PHP
+
+## The Discord, Messenger and messaging separator
+
+When you write different things in Discord, Messenger or other app use separator with 5 characters like this:
+
+```php
+-----
+```
+
+To separate between different things you want to say.
+
+Use longer separator with 20 characters if you start to talk about something entirely different.
+
+```php
+--------------------
+```
+
+Example:
+
+```php
+--------------------
+I'm going to talk about some topic
+-----
+something about the topic
+
+something about the topic
+
+something about the topic
+
+something about the topic
+-----
+something else something else
+
+something else
+
+something else
+something elsesomething else
+
+-----
+and something more about the topic
+--------------------
+New topic
+-----
+something about the topic
+
+something about the topic
+
+something about the topic
+
+something about the topic
+-----
+something else something else
+
+something else
+
+something else
+something elsesomething else
+
+-----
+and something more about the topic
