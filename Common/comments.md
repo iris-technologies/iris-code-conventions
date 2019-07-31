@@ -39,12 +39,6 @@ $what_user_send_to_us_response = get_what_the_user_send_to_us();
 process_user_response($what_user_send_to_us_response);
 ```
 
-Notice how also all variable names in all scopes have different names. This is important.
-
-Every variable and function name in the entire project should be unique. 
-This makes the code easier to understand and you are not going to make bugs by using a wrong variable or function somewhere.
-Bugs like this are really hard to track and fix.
-
 ## When to use comments
 
 1. Use comments only inside functions when the algorithms are hard to explain via functions and variable names.
@@ -57,6 +51,12 @@ Bugs like this are really hard to track and fix.
 3. Don't use comments to explain what a variable means. Use better variable name.
 3. Don't use comments to explain what a function means. Use better function name.
 4. Don't use comments in the code. Make the code self-documenting. Write better variable, function and file names.
+
+Notice how also all variable names in all scopes have different names. This is important.
+
+Every variable and function name in the entire project should be unique. 
+This makes the code easier to understand and you are not going to make bugs by using a wrong variable or function somewhere.
+Bugs like this are really hard to track and fix.
 
 Daniel Georgiev
 
