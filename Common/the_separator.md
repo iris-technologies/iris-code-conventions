@@ -41,7 +41,7 @@ Use longer separator with 20 characters if you start to talk about something ent
 
 Example:
 
-```php
+```
 --------------------
 I'm going to talk about some topic
 -----
