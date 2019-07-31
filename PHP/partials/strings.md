@@ -85,9 +85,9 @@ function current_schedules_container_card_begin()
 }
 ```
 
-### Database queries
+## Database queries
 
-#### Always use prepared queries instead of raw SQL like in the above example whenever possible and ALWAYS, ALWAYS, escape all variables.
+### Always use prepared queries instead of raw SQL like in the above example whenever possible and ALWAYS, ALWAYS, escape all variables.
 
 Use double quotes `"`.
 
@@ -156,9 +156,11 @@ $sql =
 $result = execute_query($sql);
 ```
 
-#### If you dare to write Raw SQL
+### If you dare to write Raw SQL
 
 Use double quotes `"` and place all the variables directly into the string if you use them.
+
+Don't use Raw SQL.
 
 ```php
 DO THIS:
