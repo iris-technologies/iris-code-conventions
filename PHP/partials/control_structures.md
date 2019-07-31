@@ -14,7 +14,7 @@ The general style rules for control structures are as follows:
 
 ```php
 DO THIS:
-if(current_user_has_permission_to("SCHEDULE_MESSAGES"))
+if(current_user_has_permission_to('SCHEDULE_MESSAGES'))
 {
     ...
 }
@@ -24,7 +24,7 @@ else
 }
 
 NOT THIS:
-if (current_user_has_permission_to("SCHEDULE_MESSAGES"))
+if (current_user_has_permission_to('SCHEDULE_MESSAGES'))
 {
     ...
 }
@@ -34,7 +34,7 @@ else
 }
 
 NOT THIS:
-if ( current_user_has_permission_to ( "SCHEDULE_MESSAGES" ) )
+if ( current_user_has_permission_to ( 'SCHEDULE_MESSAGES' ) )
 {
     ...
 }
