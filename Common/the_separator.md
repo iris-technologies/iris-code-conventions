@@ -28,18 +28,19 @@ It looks like this:
 When you want to combine comments with the separator always write the comment above the separator
 
 ```php
-DON'T DO THIS:
-
-////////////////////////////////////////////////////////////
-//My comment here
-function some_really_complicated_stuff()
-{
-}
 
 DO THIS:
 
 //My comment here
 ////////////////////////////////////////////////////////////
+function some_really_complicated_stuff()
+{
+}
+
+NOT THIS:
+
+////////////////////////////////////////////////////////////
+//My comment here
 function some_really_complicated_stuff()
 {
 }
