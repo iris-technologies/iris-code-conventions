@@ -32,6 +32,8 @@ if(isset($_SESSION["page_id"]))
 
 ## Multi-line strings
 
+### Echo of HTML
+
 Use single quotes `'` if you are echo-ing HTML instead of double quotes `"`.
 
 All HTML in the project should use double quotes `"`. This is how most websites, libraries and code samples are written on the internet and will work with all browsers
@@ -81,4 +83,94 @@ function current_schedules_container_card_begin()
             <p class='card-text'>  
     ";
 }
+```
+
+### Database queries
+
+Use double quotes `"` and place all the variables directly into the string if you use them
+
+```php
+DO THIS:
+
+$sql =
+"
+    INSERT INTO `app_licenses` 
+    (
+        `application_name`,
+        `activation_code`,
+        `machine_fingerprint`,
+        `expires_on`
+    )
+    VALUES 
+    (
+        '$application_name',
+        '$activation_code',
+        '$machine_fingerprint',
+        '$expires_on'
+    );
+";
+$result = execute_query($sql);
+
+NOT THIS:
+
+$sql =
+'
+    INSERT INTO `app_licenses` 
+    (
+        `application_name`,
+        `activation_code`,
+        `machine_fingerprint`,
+        `expires_on`
+    )
+    VALUES 
+    (
+        \''.$application_name.'\',
+        \''.$activation_code.'\',
+        \''.$machine_fingerprint.'\',
+        \''.$expires_on.'\'
+    );
+';
+$result = execute_query($sql);
+
+NOT THIS:
+
+$sql =
+"
+    INSERT INTO `app_licenses` 
+    (
+        `application_name`,
+        `activation_code`,
+        `machine_fingerprint`,
+        `expires_on`
+    )
+    VALUES 
+    (
+        '{$application_name}',
+        '{$activation_code}',
+        '{$machine_fingerprint}',
+        '{$expires_on}'
+    );
+";
+$result = execute_query($sql);
+
+NOT THIS:
+
+$sql =
+'
+    INSERT INTO `app_licenses` 
+    (
+        `application_name`,
+        `activation_code`,
+        `machine_fingerprint`,
+        `expires_on`
+    )
+    VALUES 
+    (
+        '{$application_name}',
+        '{$activation_code}',
+        '{$machine_fingerprint}',
+        '{$expires_on}'
+    );
+';
+$result = execute_query($sql);
 ```
