@@ -87,6 +87,73 @@ function current_schedules_container_card_begin()
 
 ### Database queries
 
+#### Always use prepared queries instead of raw SQL like in the above example whenever possible and ALWAYS, ALWAYS, escape all variables.
+
+```php
+DO THIS:
+
+$query = $GLOBALS['database_connection']->prepare
+(
+"
+    INSERT INTO iris_messenger_schedules 
+    (
+        campaign_name,
+        user_segment,
+        status,
+        start_date,
+        end_date,
+        page_id
+    )
+    VALUES 
+    (
+        ?,
+        ?,
+        'SCHEDULED',
+        ?,
+        ?,
+        ?
+    )
+"
+);
+$query->bind_param
+(
+    'sssss',
+    $_POST['block_to_send'],
+    $user_segment_json,
+    $_POST['start_date'],
+    $_POST['end_date'],
+    $page_id
+);
+$query->execute();
+
+NOT THIS:
+
+$sql =
+"
+    INSERT INTO iris_messenger_schedules 
+    (
+        campaign_name,
+        user_segment,
+        status,
+        start_date,
+        end_date,
+        page_id
+    )
+    VALUES 
+    (
+        '$_POST['block_to_send']',
+        '$user_segment_json',
+        'SCHEDULED',
+        '$_POST['start_date']',
+        '$_POST['end_date']',
+        '$page_id'
+    )
+";
+$result = execute_query($sql);
+```
+
+#### If you dare to write Raw SQL
+
 Use double quotes `"` and place all the variables directly into the string if you use them
 
 ```php
