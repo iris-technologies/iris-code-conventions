@@ -45,6 +45,19 @@ Every variable and function name in the entire project should be unique.
 This makes the code easier to understand and you are not going to make bugs by using a wrong variable or function somewhere.
 Bugs like this are really hard to track and fix.
 
+## When to use comments
+
+1. Use comments only inside functions when the algorithms are hard to explain via functions and variable names.
+2. There is a high chance that you can explain an algorithm with better variable and function names so just DON'T use comments anywhere in the code. Write good and descriptive variable, function and file names instead.
+
+## When to NOT use comments
+
+1. Don't use comments above functions
+2. Don't use comments outside of functions
+3. Don't use comments to explain what a variable means. Use better variable name.
+3. Don't use comments to explain what a function means. Use better function name.
+4. Don't use comments in the code. Make the code self-documenting. Write better variable, function and file names.
+
 Daniel Georgiev
 
 CEO Iris Technologies
