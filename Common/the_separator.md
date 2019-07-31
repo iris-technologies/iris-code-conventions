@@ -27,7 +27,7 @@ It looks like this:
 
 When you write different things in Discord, Messenger or other app use separator with 5 characters like this:
 
-```php
+```
 -----
 ```
 
@@ -37,7 +37,7 @@ Use longer separator with 20 characters if you start to talk about something ent
 
 Use also whitespaces and new lines.
 
-```php
+```
 --------------------
 ```
 
