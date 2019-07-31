@@ -23,12 +23,12 @@ Instead of writing:
 Write your code like this:
 
 ```php
-function send_message_to_user($message_to_send)
+function send_message_to_the_user($message_to_send)
 {
     ...
 }
 ...
-send_message_to_user($we_have_new_product_message);
+send_message_to_the_user($we_have_new_product_message);
 
 function process_user_response($response_to_process)
 {
