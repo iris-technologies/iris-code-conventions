@@ -23,6 +23,30 @@ It looks like this:
 1. Inside of functions, ifs, for, while etc. If you feel the need to use separator you need to create new function to handle the long code
 2. Inside class functions in languages like PHP where the method declaration and definition are in one place. There are special conventions for classes in PHP
 
+## Combining comments with the separator
+
+When you want to combine comments with the separator always write the comment above the separator
+
+```php
+DON'T DO THIS:
+
+////////////////////////////////////////////////////////////
+//My comment here
+function some_really_complicated_stuff()
+{
+}
+
+DO THIS:
+
+//My comment here
+////////////////////////////////////////////////////////////
+function some_really_complicated_stuff()
+{
+}
+
+
+```
+
 ## The Discord, Messenger and messaging separator
 
 When you write different things in Discord, Messenger or other app use separator with 5 characters like this:
