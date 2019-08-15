@@ -38,11 +38,35 @@ if($login_session['status'] == 'active' && password_verify($cookie, $login_sessi
 }
 ```
 
-When the operation is OR the first value of the variable should be false
+When the operation is `OR` the first value of the variable should be `FALSE`
+
+```php
+DO THIS:
+
+////////////////////////////////////////////////////////////
+$is_login_session_active_or_cookie_is_valid = false;
+$is_login_session_active_or_cookie_is_valid |= ($login_session['status'] == 'active');
+$is_login_session_active_or_cookie_is_valid |= password_verify($cookie, $login_session['cookie_hash']);
+
+NOT THIS:
+
+////////////////////////////////////////////////////////////
+$is_login_session_active_or_cookie_is_valid = true;
+$is_login_session_active_or_cookie_is_valid = ($login_session['status'] == 'active');
+$is_login_session_active_or_cookie_is_valid |= password_verify($cookie, $login_session['cookie_hash']);
+
+WORST (and bug):
+
+////////////////////////////////////////////////////////////
+$is_login_session_active_or_cookie_is_valid = true;
+$is_login_session_active_or_cookie_is_valid |= ($login_session['status'] == 'active');
+$is_login_session_active_or_cookie_is_valid |= password_verify($cookie, $login_session['cookie_hash']);
+```
+
 
 When the operation is AND the first value of the variable should be true
 
-```
+```php
 DO THIS:
 
 ////////////////////////////////////////////////////////////
