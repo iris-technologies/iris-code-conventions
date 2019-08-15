@@ -21,6 +21,7 @@ if(password_verify($cookie, $login_session['cookie_hash']))
 {
     ...
 }
+```
 
 ## Multiple conditions
 
