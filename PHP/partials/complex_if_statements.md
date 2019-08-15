@@ -63,6 +63,8 @@ if($login_session['status'] == 'active' && password_verify($cookie, $login_sessi
 }
 ```
 
+### Multiple OR
+
 When the operation is `OR` the first value of the variable should be `FALSE`
 
 ```php
@@ -88,6 +90,7 @@ $is_login_session_active_or_cookie_is_valid |= ($login_session['status'] == 'act
 $is_login_session_active_or_cookie_is_valid |= password_verify($cookie, $login_session['cookie_hash']);
 ```
 
+### Multiple AND
 
 When the operation is `AND` the first value of the variable should be `TRUE`
 
@@ -141,3 +144,7 @@ $is_login_session_active_and_cookie_is_valid
 &= ($login_session_which_is_super_long_but_the_next_line_is_not_we_must_be_consistent_if_the_variable_name_is_long_place_all_the_statements_on_new_line['status'] == 'active');
 $is_login_session_active_and_cookie_is_valid &= password_verify($cookie, $login_session['cookie_hash']);
 ```
+
+### Multiple mixed
+
+This is bad code design. Rewrite your code with more variables and more simple if statement
