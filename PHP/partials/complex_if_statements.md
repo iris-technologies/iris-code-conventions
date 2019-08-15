@@ -2,6 +2,8 @@
 
 Always prefer to write a variable in the if statement instead of calculation or function
 
+## Variable instead of function call
+
 ```php
 DO THIS:
 
@@ -20,6 +22,7 @@ if(password_verify($cookie, $login_session['cookie_hash']))
     ...
 }
 
+## Multiple conditions
 
 If you need to write an if statement with multiple conditions,
 
