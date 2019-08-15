@@ -112,6 +112,7 @@ NOT THIS:
 
 ////////////////////////////////////////////////////////////
 $is_login_session_active_and_cookie_is_valid = true;
-$is_login_session_active_and_cookie_is_valid &= ($login_session_which_is_super_long_but_the_next_line_is_not_we_must_be_consistent_if_the_variable_name_is_long_place_all_the_statements_on_new_line['status'] == 'active');
+$is_login_session_active_and_cookie_is_valid 
+&= ($login_session_which_is_super_long_but_the_next_line_is_not_we_must_be_consistent_if_the_variable_name_is_long_place_all_the_statements_on_new_line['status'] == 'active');
 $is_login_session_active_and_cookie_is_valid &= password_verify($cookie, $login_session['cookie_hash']);
 ```
