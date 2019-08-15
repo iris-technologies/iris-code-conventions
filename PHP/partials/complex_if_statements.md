@@ -1,5 +1,26 @@
 # Complex If Statements Conventions
 
+Always prefer to write a variable in the if statement instead of calculation or function
+
+```php
+DO THIS:
+
+////////////////////////////////////////////////////////////
+$is_cookie_hash_valid = password_verify($cookie, $login_session['cookie_hash']);
+if($is_cookie_hash_valid)
+{
+    ...
+}
+
+NOT THIS:
+
+////////////////////////////////////////////////////////////
+if(password_verify($cookie, $login_session['cookie_hash']))
+{
+    ...
+}
+
+
 If you need to write an if statement with multiple conditions,
 
 - Prefer to use a single variable with the result of all calculations
