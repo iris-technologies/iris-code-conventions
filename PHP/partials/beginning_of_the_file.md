@@ -12,3 +12,19 @@
 //Code review videos:
 //PLACE_URL_HERE
 ```
+
+Then this is commonly followed by
+
+```php
+////////////////////////////////////////////////////////////
+if(!defined('DOCUMENT_ROOT'))
+{
+    define('DOCUMENT_ROOT', $_SERVER['DOCUMENT_ROOT']);
+}
+
+////////////////////////////////////////////////////////////
+if(session_status() === PHP_SESSION_NONE)
+{
+    session_start();
+}
+```
