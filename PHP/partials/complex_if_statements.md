@@ -88,3 +88,29 @@ $is_login_session_active_and_cookie_is_valid = false;
 $is_login_session_active_and_cookie_is_valid &= ($login_session['status'] == 'active');
 $is_login_session_active_and_cookie_is_valid &= password_verify($cookie, $login_session['cookie_hash']);
 ```
+
+Prefer to write the conditions on one line and if the condition is super long place it on 2 lines
+
+```php
+DO THIS:
+
+////////////////////////////////////////////////////////////
+$is_login_session_active_and_cookie_is_valid = true;
+$is_login_session_active_and_cookie_is_valid &= ($login_session['status'] == 'active');
+$is_login_session_active_and_cookie_is_valid &= password_verify($cookie, $login_session['cookie_hash']);
+
+OK:
+
+////////////////////////////////////////////////////////////
+$is_login_session_active_and_cookie_is_valid = true;
+$is_login_session_active_and_cookie_is_valid 
+&= ($login_session['status'] == 'active');
+$is_login_session_active_and_cookie_is_valid 
+&= password_verify($cookie, $login_session['cookie_hash']);
+
+NOT THIS:
+
+////////////////////////////////////////////////////////////
+$is_login_session_active_and_cookie_is_valid = false;
+$is_login_session_active_and_cookie_is_valid &= ($login_session['status'] == 'active') && password_verify($cookie, $login_session['cookie_hash']);
+```
