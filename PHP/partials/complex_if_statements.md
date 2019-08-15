@@ -64,7 +64,7 @@ $is_login_session_active_or_cookie_is_valid |= password_verify($cookie, $login_s
 ```
 
 
-When the operation is AND the first value of the variable should be true
+When the operation is `AND` the first value of the variable should be `TRUE`
 
 ```php
 DO THIS:
