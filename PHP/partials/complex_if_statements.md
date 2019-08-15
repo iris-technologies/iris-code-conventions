@@ -36,3 +36,4 @@ if($login_session['status'] == 'active' && password_verify($cookie, $login_sessi
 {
     return $username;
 }
+```
