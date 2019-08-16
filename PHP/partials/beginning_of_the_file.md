@@ -1,7 +1,7 @@
 # Beginning of the file
 
 ```php
-// file_name.php
+// /path_to_file/file_name.php
 ////////////////////////////////////////////////////////////
 
 //To test:
