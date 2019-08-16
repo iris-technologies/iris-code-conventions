@@ -1,6 +1,9 @@
 # Beginning of the file
 
 ```php
+// file_name.php
+////////////////////////////////////////////////////////////
+
 //http://localhost/path_to_file/file_name.php
 //http://sandbox.iristech.co/path_to_file/file_name.php
 //http://iristech.co/path_to_file/file_name.php
@@ -11,6 +14,11 @@
 //PLACE_URL_HERE
 //Code review videos:
 //PLACE_URL_HERE
+//
+//Require as:
+//require_once(DOCUMENT_ROOT.'/custom-code/email-auth/config.php');
+////////////////////////////////////////////////////////////
+
 ```
 
 Then this is commonly followed by
