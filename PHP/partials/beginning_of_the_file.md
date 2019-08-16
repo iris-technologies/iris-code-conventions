@@ -4,6 +4,7 @@
 // file_name.php
 ////////////////////////////////////////////////////////////
 
+//To test:
 //http://localhost/path_to_file/file_name.php
 //http://sandbox.iristech.co/path_to_file/file_name.php
 //http://iristech.co/path_to_file/file_name.php
