@@ -17,7 +17,7 @@
 //PLACE_URL_HERE
 //
 //Require as:
-//require_once(DOCUMENT_ROOT.'/custom-code/email-auth/config.php');
+//require_once(DOCUMENT_ROOT.'/path_to_file/file_name.php');
 ////////////////////////////////////////////////////////////
 
 ```
