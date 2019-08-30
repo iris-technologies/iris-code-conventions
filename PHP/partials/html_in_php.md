@@ -28,6 +28,7 @@ echo
 
 Here is how to write HTML element with multiple attributes
 ```php
+'
 <input 
     type="button" 
     value="Delete" 
@@ -35,4 +36,5 @@ Here is how to write HTML element with multiple attributes
     data-toggle="modal"
     data-target="#delete-from-'.$table_id.'-modal"
 >
+'
 ```
