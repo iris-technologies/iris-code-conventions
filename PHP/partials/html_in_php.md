@@ -29,10 +29,10 @@ echo
 Here is how to write HTML element with multiple attributes
 ```php
 <input 
-        type="button" 
-        value="Delete" 
-        class="btn btn-md btn-danger m-2"
-        data-toggle="modal"
-        data-target="#delete-from-'.$table_id.'-modal"
+    type="button" 
+    value="Delete" 
+    class="btn btn-md btn-danger m-2"
+    data-toggle="modal"
+    data-target="#delete-from-'.$table_id.'-modal"
 >
 ```
