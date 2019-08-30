@@ -26,7 +26,7 @@ echo
 '</div>';
 ```
 
-Here is how to write HTML element with multiple attributes
+Here is how to write Empty HTML element (without closing tag) with multiple attributes
 ```php
 '
 <input 
@@ -36,5 +36,26 @@ Here is how to write HTML element with multiple attributes
     data-toggle="modal"
     data-target="#delete-from-'.$table_id.'-modal"
 >
+'
+```
+
+Here is how to write HTML element (with closing tag) with multiple attributes
+```php
+'
+<div 
+    id="test"
+    class="row align-items-center px-4"
+>
+</div>
+'
+```
+
+Here is how to write HTML element (with closing tag) with 1 attribute
+```php
+'
+<div 
+    id="test"
+>
+</div>
 '
 ```
