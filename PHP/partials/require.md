@@ -3,6 +3,7 @@
 - Always use `require_once`
 - Don't include spaces
 - Use brackets
+- Use single quotes for the string
 
 ```php
 DO THIS:
