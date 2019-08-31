@@ -43,3 +43,17 @@ if(session_status() === PHP_SESSION_NONE)
     session_start();
 }
 ```
+
+And then check for permissions:
+
+```php
+////////////////////////////////////////////////////////////
+require_once(DOCUMENT_ROOT.'/custom-code/externals/iris-php-utils/permission_util.php');
+redirect_if_not_logged_in();
+
+////////////////////////////////////////////////////////////
+if (!current_user_has_permission_to("COPY_TEMPLATE_POPUP_IN_POPUP_MANAGER"))
+{
+    redirect_to('popup_manager_permission_denied.php?page_name='.CURRENT_PAGE_NAME);
+}
+```
