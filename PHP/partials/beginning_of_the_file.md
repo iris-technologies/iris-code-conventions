@@ -32,6 +32,12 @@ if(!defined('DOCUMENT_ROOT'))
 }
 
 ////////////////////////////////////////////////////////////
+if(!defined('CURRENT_PAGE_NAME'))
+{
+	define('CURRENT_PAGE_NAME', basename(__FILE__, '.php'));
+}
+
+////////////////////////////////////////////////////////////
 if(session_status() === PHP_SESSION_NONE)
 {
     session_start();
