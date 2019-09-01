@@ -1,3 +1,4 @@
+# HTML in PHP
 When you `echo` HTML in PHP
 
 1. Use single quotes for the `echo`
@@ -55,4 +56,49 @@ Here is how to write HTML element (with closing tag) with 1 attribute
 <div id="test">
 </div>
 '
+```
+
+# PHP in HTML
+
+When you have mixed PHP and HTML:
+
+- `<?php` should be on new line
+- the code should be on new line
+- `?>` should be on new line
+
+Example:
+
+```php
+DO THIS:
+
+<?php
+if ($search != '')
+{ 
+?>
+    <div class="chart-area">
+        <canvas id="viewsChart"></canvas>
+    </div>
+<?php
+}
+else
+{
+?>
+    <h6 class="m-0 font-weight-bold text-primary">There is no search query</h6>
+    <h6 class="m-0 font-weight-bold text-primary">Try: "/"</h6>
+<?php
+}
+?>
+
+NOT THIS:
+
+<div class="card-body">
+    <?php if ($search != ''){ ?>
+        <div class="chart-area">
+            <canvas id="viewsChart"></canvas>
+        </div>
+    <?php } else {?>
+        <h6 class="m-0 font-weight-bold text-primary">There is no search query</h6>
+        <h6 class="m-0 font-weight-bold text-primary">Try: "/"</h6>
+    <?php }?>
+</div>
 ```
