@@ -62,6 +62,7 @@ Here is how to write HTML element (with closing tag) with 1 attribute
 
 Here is how to write HTML element with 1 attribute and multiple values
 ```php
+'
 <div 
     class=
     "
@@ -75,6 +76,7 @@ Here is how to write HTML element with 1 attribute and multiple values
 >
     ...
 </div>
+'
 ```
 
 
