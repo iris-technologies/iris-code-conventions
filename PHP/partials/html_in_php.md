@@ -2,15 +2,14 @@ When you `echo` HTML in PHP
 
 1. Use single quotes for the `echo`
 2. Use Double quotes for the HTML attribute values
-3. Place every attribute on new line
+3. If you have 1 attribute - The attribute should be on the same line
+3. If you have more than 1 attributes - Place every attribute on new line
 
 ```php
 EXAMPLE:
 echo
 '
-<div 
-    class="row align-items-center px-4"
->
+<div class="row align-items-center px-4">
     Delete:
     <!-- Triggers modal -->
     <input 
@@ -53,9 +52,7 @@ Here is how to write HTML element (with closing tag) with multiple attributes
 Here is how to write HTML element (with closing tag) with 1 attribute
 ```php
 '
-<div 
-    id="test"
->
+<div id="test">
 </div>
 '
 ```
