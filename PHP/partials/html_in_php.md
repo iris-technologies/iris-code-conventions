@@ -4,7 +4,6 @@ When you `echo` HTML in PHP
 - Use single quotes for the `echo`
 - Use Double quotes for the HTML attribute values
 - If you have 1 attribute with 1 value - The attribute should be on the same line
-~~- If you have 1 attribute with multiple values - place the quotes on new line and all values on new line and indent them~~
 - If you have more than 1 attributes - Place every attribute on new line
 
 ```php
@@ -58,28 +57,6 @@ Here is how to write HTML element (with closing tag) with 1 attribute
 </div>
 '
 ```
-
-~~Here is how to write HTML element with 1 attribute and multiple values
-```php
-'
-<div 
-    class=
-    "
-        card-header
-        py-3
-        d-flex
-        flex-row
-        align-items-center
-        justify-content-between
-    "
->
-    ...
-</div>
-'
-```
-~~
-
-
 
 # PHP in HTML
 
