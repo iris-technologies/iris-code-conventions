@@ -27,3 +27,9 @@
 С използването да максимално прости конструкции и неща проектът става по-бърз и лесен за разбиране.
 
 Целта ни е всеки нов човек да разбере под 1 час как работи целия проект и след това да може да почне да пише код.
+
+## Препоръчителна литература
+
+Clean Code: A Handbook of Agile Software Craftsmanship: Линк към PDF | [Линк към Amazon](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)
+
+The Pragmatic Programmer: From Journeyman to Master: Линк към PDF | [Линк към Amazon](https://www.amazon.com/Pragmatic-Programmer-Journeyman-Master/dp/020161622X)
