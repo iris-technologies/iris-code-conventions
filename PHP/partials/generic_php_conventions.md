@@ -36,6 +36,6 @@
 
 ## Препоръчителна литература
 
-Clean Code: A Handbook of Agile Software Craftsmanship: Линк към PDF | [Линк към Amazon](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)
+Clean Code: A Handbook of Agile Software Craftsmanship: [Линк към PDF](https://drive.google.com/file/d/1b-BuzIHRxGB993_vtHVD4KE-EOprNKDh/view?usp=sharing) | [Линк към Amazon](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)
 
-The Pragmatic Programmer: From Journeyman to Master: Линк към PDF | [Линк към Amazon](https://www.amazon.com/Pragmatic-Programmer-Journeyman-Master/dp/020161622X)
+The Pragmatic Programmer: From Journeyman to Master: [Линк към PDF](https://drive.google.com/file/d/17Ztm0-YeSQhtHau5y5fGI3s-fYsR0iNh/view?usp=sharing) | [Линк към Amazon](https://www.amazon.com/Pragmatic-Programmer-Journeyman-Master/dp/020161622X)
