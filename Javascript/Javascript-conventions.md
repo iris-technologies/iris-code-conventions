@@ -12,6 +12,9 @@ Use PascalCase for:
 Brackets:
 - Always on new line
 
+Separator:
+ - Use the separator to separate functions and code logic on top level - [Read about the Separator](https://github.com/iris-technologies/iris-code-conventions-docs/blob/master/Common/the_separator.md)
+
 Examples:
 
 ```javascript
