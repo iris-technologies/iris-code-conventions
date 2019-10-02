@@ -1,4 +1,4 @@
-# iris-code-conventions
+# Javascript Conventions
 
 ## Common
 
