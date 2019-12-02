@@ -1226,6 +1226,70 @@ if(session_status() === PHP_SESSION_NONE)
 }
 ```
 
+# SQL конвенции
+
+## SQL с SELECT и WHERE
+
+```php
+$username = escape_string($username);
+return prepared_query_as_array
+(
+    '
+        SELECT * FROM `iris_admins`
+            WHERE 
+                `username` = ?
+                AND `for_user` = ?
+    ',
+    'ss', 
+    $username, 
+    get_current_for_user_value()
+);
+```
+
+```php
+$subtests = prepared_query_as_array
+(
+    "
+        SELECT * FROM `iris_ab_testing`
+        WHERE 
+            `test_name` = ?
+            AND `for_user` = ?
+    ",
+    'ss',
+    $test,
+    get_current_for_user_value()
+);
+```
+
+## SQL с INSERT
+
+```php
+execute_prepared
+(
+    '
+        INSERT INTO `iris_admins` 
+        (
+            `username`,
+            `password_hash`,
+            `permissions`,
+            `for_user`
+        )
+        VALUES
+        (
+            ?,
+            ?,
+            ?,
+            ?
+        )
+    ',
+    'ssss', 
+    $username,
+    $password_hash, 
+    $permissions, 
+    get_current_for_user_value()
+);
+```
+
 And then check for permissions:
 
 ```php
