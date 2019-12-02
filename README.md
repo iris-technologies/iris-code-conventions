@@ -124,6 +124,22 @@ but after doing some tests again, we found that it's still hard to distinguish b
 
 This is how our second code convention rule was born and this is again in all languages.
 
+## Имена на файлове
+
+За файлове в PHP:
+
+Ако файла ще се отваря като страница пишем kebab-case.php
+
+Ако файла само се require-ва или е сървиз и не е видим snake_case.php
+
+За папки:
+
+Ако файловете в папките ще са видими за потребителите и ще се отварят като страници пишем kebab-case/
+
+Ако файловете в папките НЯМА да са видими за потребителите и няма да се отварят като страници пишем snake_case/
+
+snake_case се отнася за папки с файлове, които само се require-ват `php-utils` файлове примерно или папки с файлове, които се извикват като CRON job.
+
 ### We write class names in all languages PascalCase
 
 Here is how you can do the code readability test by yourself.
