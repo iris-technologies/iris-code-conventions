@@ -81,7 +81,7 @@ function some_really_complicated_stuff()
 
 ```
 
-## Notice about varialbe and function names
+## Notice about variable and function names
 
 Notice how also all variable names in all scopes have different names. This is important.
 
